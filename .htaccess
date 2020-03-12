@@ -1,0 +1,15 @@
+
+# BEGIN WordPress
+# Les directives (lignes) entre 'BEGIN WordPress' et 'END WordPress' sont
+# générées dynamiquement et ne doivent uniquement être modifiées via les filtres WordPress.
+# Toute modification des directives entre ces marqueurs sera écrasée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /2020-maximilien/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /2020-maximilien/index.php [L]
+</IfModule>
+
+# END WordPress
